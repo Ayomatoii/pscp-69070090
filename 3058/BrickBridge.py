@@ -2,11 +2,11 @@
 a = int(input())
 b = int(input())
 goal = int(input())
-b_bridge = b * 5
 
-d = goal - (goal // b_bridge * 5)
+b = min(b, goal//5)
+a_used = goal - (b * 5)
 
-print(d)
-#ans = goal - d
-
-#print(ans)
+if a >= a_used:
+    print(a_used)
+elif a < a_used:
+    print(-1)
