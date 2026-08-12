@@ -138,32 +138,32 @@ Step 5: output ออกมา
 ทำไมเลือก case นี้:
 
 ```text
-เพราะว่าบางคนอาจจะพลาดตั้ง output เป็น Purple
+เพราะว่าบางคนอาจจะไม่ได้ปัดเศษขึ้น
 ```
 
 Input:
 
 ```text
-Red
-Blue
+100 1
+1 0
 ```
 
 Expected output:
 
 ```text
-Violet
+0
 ```
 
 Actual output:
 
 ```text
-Violet
+1
 ```
 
 Result:
 
 ```text
-Pass
+Not Pass
 ```
 
 ### Test Case 2
@@ -171,32 +171,32 @@ Pass
 ทำไมเลือก case นี้:
 
 ```text
-เพราะว่าบางคนอาจจะพลาดไม่ได้ตั้งเงื่อนไขนี้ไว้
+เพราะว่าบางคนอาจจะเริ่มคิดตั้งแต่ 1 วินาที
 ```
 
 Input:
 
 ```text
-Red
-Red
+100 1
+0 0
 ```
 
 Expected output:
 
 ```text
-Red
+1
 ```
 
 Actual output:
 
 ```text
-Red
+0
 ```
 
 Result:
 
 ```text
-Pass
+Not Pass
 ```
 
 ### Test Case 3
@@ -204,26 +204,26 @@ Pass
 ทำไมเลือก case นี้:
 
 ```text
-เพราะว่าบางคนอาจจะลืมใช้ else เพื่อเช็ค input ของสีอื่นที่ไมใช่แม่สี
+เพราะว่าบางคนอาจจะใช้ loop
 ```
 
 Input:
 
 ```text
-Black
-Yellow
+1 1
+10000 10000
 ```
 
 Expected output:
 
 ```text
-Error
+Time out
 ```
 
 Actual output:
 
 ```text
-Error
+628320000
 ```
 
 Result:
