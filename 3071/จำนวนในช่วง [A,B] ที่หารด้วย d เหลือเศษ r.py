@@ -4,6 +4,10 @@ b = int(input())
 d = int(input())
 r = int(input())
 
-x = (b - r) // d - (a - 1 - r) // d
+total = 0
 
-print(x)
+for i in range(a, b + 1):
+    if i % d == r:
+        total += 1
+
+print(total)
